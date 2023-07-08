@@ -200,7 +200,7 @@ def LDA_model(corpus, id2word, texts, num_keywords, num_topics, training=True):
     coherences = []
     coherences_u_mass = []
     perplexities = []
-    base_path = DATA_FOLDER / 'training_models'
+    base_path = DATA_FOLDER / 'output' / 'models'
     for i in num_topics:
         print(f"topic #{i}")
         filepath = base_path / f'lda_model_{i}.pk'
